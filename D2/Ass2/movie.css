@@ -1,0 +1,12 @@
+body{
+    background-image: url("img/background.png");
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+.heading{
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: Tahoma, Verdana, sans-serif;
+    color: #999999;
+}

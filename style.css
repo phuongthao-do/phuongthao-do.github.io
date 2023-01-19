@@ -21,32 +21,33 @@ img {
 #navigation{
     /* height: 100px; */
     background-color: aqua;
-    grid-area: n;
+    /* grid-area: n; */
 }
 #sidebar{
     width: 300px;
     background-color: aquamarine;
-    grid-area: s;
+    /* grid-area: s; */
 }
 #content{
     /* height: 300px; */
     background-color: rgb(39, 179, 133);
-    grid-area: c;
+    /* grid-area: c; */
 }
 #footer{
     /* height: 100%; */
     background-color: rgb(220, 181, 238);
-    grid-area: f;
+    /* grid-area: f; */
 }
 #container{
 
-    display: grid;
-    grid-template-areas:
+    display: flex;
+    /* display: grid; */
+    /* grid-template-areas:
     'n  n   n   n'
     'c  c   c   s'
     'c  c   c   s'
     'f  f   f   f'
-    'f  f   f   f'
+    'f  f   f   f' */
 }
 @media screen and (max-width: 600px){
     #container{

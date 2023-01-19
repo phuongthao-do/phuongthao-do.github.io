@@ -52,6 +52,7 @@ a{
 }
 #container{
     display: grid;
+
     grid-template-areas:
     'h  h   h'
     'm  m   m'
@@ -68,5 +69,6 @@ a{
 @media screen and (max-width: 600px){
     #colum2{
         flex: 2 1 200px;
+        order: 10;
     }
 }

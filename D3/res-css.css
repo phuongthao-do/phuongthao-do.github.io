@@ -10,12 +10,15 @@
 }
 #colum1{
     background-color: rgb(170,170,170);
+    width: 25%;
 }
 #colum2{
     background-color: rgb(187,187,187);
+    width: 50%;
 }
 #colum3{
     background-color: rgb(204,204,204);
+    width: 25%;
 }
 #footer{
     text-align: center;
@@ -59,16 +62,11 @@ a{
     'c  c   c'
     'f  f   f';
 }
-
-#content>* {
-    flex: 1 1 200px;
-}
-#colum2{
-    flex: 2 1 200px;
-}
 @media screen and (max-width: 600px){
+    #colum1{ width: 50%; }
+    #colum3{ width: 50%; }
     #colum2{
-        flex: 2 1 200px;
+        width: 100%;
         order: 10;
     }
 }

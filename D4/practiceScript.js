@@ -130,3 +130,6 @@ console.log("multiply each element by 10: " + multiply10);
 
 const elements3 = a.filter( x => x == 3);
 console.log("all elements equal to 3: " + elements3);
+
+const productAll = a.reduce((res, i) => res*i)
+console.log("the product of all elements: " + productAll);

@@ -1,42 +1,33 @@
-// console.log(x);
+function myF(){
+    document.getElementById("nameDiv").className = "classDiv";
+}
+// myF();
 
-// var x = 5;
+window.onload = function(){
+   var tag = document.getElementById("nameDiv");
+//    console.log(tag.innerHTML);
+//    console.log(tag.innerText);
+   console.log(tag.offsetTop);
+//    tag.className = "esp";
+   tag.style.nameDiv = parseInt("30px") + 50 + "px";
+   document.getElementById("myBtn").onclick = changeColor;
+//    document.getElementById("myBtn").onclick = changeColor;
+   
+}
+timer = null;
+function changeColor(){
+    if(timer === null){
 
-// console.log(x);
+        timer = setInterval(showHTML, 3000);
+    }else{
+        clearInterval(timer);
+        timer = null;
+    }
+}
 
-// for(x = 0; x < 12; x++){
-//     // console.log(x);
-// }
-
-// if(false){
-//     x = 10;
-// }
-
-// function a1(){
-//     var a = 10;
-// }
-// a1();
-// console.log(a);
-
-
-// function f1(){
-//     function f2(){
-//         var  x = 20;
-//     }
-//     f2();
-//     console.log(x);
-  
-// }
-
-// f1();
-// console.log(x);
-// const n1 = parseInt("420 is the answer");
-// console.log(n1)
-// let ls = ["Hoo", "Haha", "Huhu", "Kaka"]
-// let res = ls.reduce((i, acc) => i.length + acc)
-// console.log(res)
-
-
-// console.log(5 * "5opop")
-
-console.log(!isNaN("123d"))
+function showMsg(){
+    alert("My pop");
+}
+function showHTML(x){
+    document.getElementById("div2").innerText += "Now, I'm here";
+}

@@ -3,10 +3,117 @@ body{
     font-size: 8pt;
     font-family: Verdana, Tahoma, sans-serif;
 }
+.banner{
+    text-align:center;
+    background-image: url("img/bannerbg.png");
+}
+.banner img {
+    height: 50px;
+}
 .heading{
     text-align: center;
     font-size: 24pt;
     font-weight: bold;
     font-family: Tahoma, Verdana, sans-serif;
-    color: #999999;
+    text-shadow: 3px 3px #999999;
+}
+.overall-content{
+    width: 800px;
+    border: 4px solid gray;
+    border-radius: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: colum;
+    position: relative;
+}
+.left-section{
+    order: 1;
+    grid-area: l;
+}
+.right-section{
+    order: 2;
+    grid-area: r;
+}
+img.bottom-vertical{
+    vertical-align:bottom;
+}
+.left-section-banner{
+    background-image: url("img/rbg.png");
+    font-size: 48px;
+    color: red;
+    font-weight: bold;
+    border-top-left-radius: 20px 20px;
+}
+.left-section-banner img{
+    border-top-left-radius: 20px 20px;
+}
+.right-section img{
+    border-top-right-radius: 20px 20px;
+}
+.separate-2columns{
+    column-count: 2;
+    column-gap: 2%;
+    padding: 10px;
+}
+.review-box{
+    font-size: 8pt;
+    font-weight: bold;
+    background-color: #E8DC9B;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 8px;
+    margin-top: 0px;
+    /* margin: 0px 10px 0px 10px; */
+}
+.review-box.height-fixed{
+    height: 25px
+}
+.review-box>img, .review-person > img{
+    padding: 0px 5px 5px 0px;
+    float: left;
+}
+.review-person{
+    padding-bottom: 30px;
+}
+.review-person > span{
+    font-style:italic;
+}
+.review-movie{
+    background-color:#A2B964;
+    padding: 10pt;
+    font-size: 8pt;
+    font-family: Arial, sans-serif;
+}
+.review-movie dt{
+    font-weight: bold;
+}
+.review-movie dd {
+    padding-bottom: 10pt;
+}
+.number-review{
+    grid-area: bt;
+    background-color: #A2B964;
+    padding: 5px;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right: 0;
+    margin: 0px;
+    text-align: center;
+}
+.w3c-validator{
+    opacity: 50%;
+}
+#none-decoration ul{
+    list-style: none;
+    padding-inline-start: 0px;
+}
+body{
+    position: relative;
+}
+#validator{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    /* float: right; */
 }

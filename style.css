@@ -58,3 +58,17 @@ img {
         justify-content: flex-end;
     }
 }
+
+.esp{
+    /* height: 100px; */
+    font-size: 20px;
+    color: red;
+}
+#nameDiv{
+    position: relative;
+    top: 100px;
+    background-color:rgb(220, 181, 238);
+}
+body{
+    margin: 0px;
+}

@@ -1,9 +1,17 @@
+"use strict";
 // var preTextAreaStr = "";
 var currentAnimation = "Blank";
 var currentFontSize = "12pt";
 const linkBreak = "=====\n";
 const speedDefault = 250;
 
+var textArea;
+var startBtn;
+var startBtn;
+var stopBtn;
+var animationDrb;
+var fontsizeDrb;
+var turboChb;
 window.onload = function() {
 textArea = document.getElementById("text-area");
 startBtn = document.getElementById("start");
@@ -20,6 +28,7 @@ turboChb.onchange = turboChecked;
 }
 
 var timer = null;
+var currentSpeed;
 function turboChecked(){
     if(turboChb.checked)
         currentSpeed = 50;
@@ -43,6 +52,7 @@ function animationChanged(){
     item = 0;
 }
 
+var preTextAreaStr;
 function startClicked() {
     startBtn.disabled = true;
     stopBtn.disabled = false;

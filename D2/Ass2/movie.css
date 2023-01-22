@@ -63,7 +63,6 @@ img.bottom-vertical{
     border-radius: 10px;
     padding: 8px;
     margin-top: 0px;
-    /* margin: 0px 10px 0px 10px; */
 }
 .review-box.height-fixed{
     height: 25px
@@ -115,5 +114,4 @@ body{
     position: absolute;
     bottom:0;
     right: 0;
-    /* float: right; */
 }

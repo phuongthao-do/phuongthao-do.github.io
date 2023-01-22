@@ -1,3 +1,4 @@
+/*jslint node: true */
 "use strict";
 // var preTextAreaStr = "";
 var currentAnimation = "Blank";
@@ -25,7 +26,7 @@ stopBtn.onclick = stopClicked;
 animationDrb.onchange = animationChanged;
 fontsizeDrb.onchange = fontsizeChanged;
 turboChb.onchange = turboChecked;
-}
+};
 
 var timer = null;
 var currentSpeed;

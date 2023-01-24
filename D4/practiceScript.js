@@ -58,15 +58,15 @@ function sum(arr){
 
     var res = 0;
     for(i of arr){
-        if(typeof(i) != 'number') return 0;
+        if(typeof(i) != 'number') continue;
         res += i;
     }
     return res
 }
 console.log("Expected output of sum([]) is 0  " + myFunctionTest(0, sum([])));
 console.log("Expected output of sum([2, 5, 10]) is 17  " + myFunctionTest(17, sum([2, 5, 10])));
-console.log("Expected output of sum(['2', 5, 10]) is 0  " + myFunctionTest(0, sum(['2', 5, 10])));
-console.log("Expected output of sum(['a', 5, 10]) is 0  " + myFunctionTest(0, sum(['a', 5, 10])));
+console.log("Expected output of sum(['2', 5, 10]) is 15  " + myFunctionTest(15, sum(['2', 5, 10])));
+console.log("Expected output of sum(['a', 5, 10]) is 15  " + myFunctionTest(15, sum(['a', 5, 10])));
 
 // multiplies() (respectively) all the numbers in an array of numbers
 function multiplies(arr){
@@ -74,15 +74,15 @@ function multiplies(arr){
 
     var res = 1;
     for(i of arr){
-        if(typeof(i) != 'number') return 0;
+        if(typeof(i) != 'number') continue;
         res *= i;
     }
     return res
 }
 console.log("Expected output of multiplies([]) is 0  " + myFunctionTest(0, multiplies([])));
 console.log("Expected output of multiplies([2, 5, 10]) is 100  " + myFunctionTest(100, multiplies([2, 5, 10])));
-console.log("Expected output of multiplies(['2', 5, 10]) is 0  " + myFunctionTest(0, multiplies(['2', 5, 10])));
-console.log("Expected output of multiplies(['a', 5, 10]) is 0  " + myFunctionTest(0, multiplies(['a', 5, 10])));
+console.log("Expected output of multiplies(['2', 5, 10]) is 50 " + myFunctionTest(50, multiplies(['2', 5, 10])));
+console.log("Expected output of multiplies(['a', 5, 10]) is 50  " + myFunctionTest(50, multiplies(['a', 5, 10])));
 
 // reverse() that computes the reversal of a string
 function reverse(str){

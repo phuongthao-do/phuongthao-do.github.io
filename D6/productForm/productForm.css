@@ -1,0 +1,90 @@
+body{
+    font-size: 18pt;
+    padding: 30px;
+}
+
+.description{
+    font-size: 15pt;
+    padding-top: 10px
+}
+
+input[type=text], input[type=date], #supplier{
+    padding: 10px;
+    width: 100%;
+    font-size: 18px;
+}
+.btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.signout{
+
+    background-color: #f2f4f6;
+    border:none;
+}
+
+.form-group{
+    margin: 20px;
+}
+
+.flabel{
+    padding-bottom: 10px;
+}
+#newProduct{
+    display: flex;
+    flex-direction: row;
+}
+.leftside,.rightside{
+    width: 50%;
+}
+.navigation{
+    /* grid-area: n; */
+    display: flex;
+    flex-direction: row;
+    background-color: #3ba9e7;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 55px;
+    color:white;
+}
+.header{
+    width: 45%;
+    margin: 10px;
+    font-weight: normal;
+}
+.items{
+    width: 10%;
+    margin: auto;
+    text-align: center;
+    border-left: 1px solid white;
+}
+.hiitem{
+    text-align: right;
+    width: 35%;
+    margin: auto;
+}
+.content{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-group{
+    text-align: right;
+}
+.btn-group-item{
+    margin-left: 10px;
+    background-color: white;
+}
+#reset{
+    border: 1px solid #265585;
+    color: #265585;
+}
+#cancel{
+    border: 1px solid #e26c2a;
+    color: #e26c2a;
+}
+#addProduct{
+    border: 1px solid #4cb0ea;
+    color: #4cb0ea;
+}

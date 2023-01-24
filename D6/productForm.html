@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Product Lab D6</title>
+    <link href="productForm/productForm.css" rel="stylesheet">
+    <script src="productForm/productForm.js"></script>
+</head>
+<body>
+<div class="container">
+<div class="navigation">
+    <h3 class="header">MUM Golden Dome Market:::SRM System</h3>
+    <div class="items">Product</div>
+    <div class="items">Suppliers</div>
+    <div class="hiitem">Hello! <button class="btn signout">Sign Out</button></div>
+</div>
+<div class="content">
+<h3>New Product Form</h3>
+<form id="newProduct">
+    <div class="leftside">
+        <div class="form-group">
+        <div class="flabel"><label for="productNumber">Product Number</label></div>
+        <input type="text" name="productNumber">
+        </div>
+
+        <div class="form-group">
+            <div class="flabel"><label for="nameP">Name</label></div>
+            <input type="text" name="nameP">
+        </div>
+
+        <div class="form-group">
+            <div class="flabel"><label for="unitPrice">Unit Price</label></div>
+            <input type="text" name="unitPrice" pattern="^[0-9]{1,5}\.[0-9]{1}$" title="Invalid unit price!" placeholder="0.0">
+        </div>
+    </div>
+
+    <div class="rightside">
+        <div class="form-group">
+            <div class="flabel"><label for="quantity">Quantity in stock</label></div>
+            <input type="text" name="quantity" pattern="^[0-9]*$" placeholder="0">
+        </div>
+
+        <div class="form-group">
+            <div class="flabel"><label for="supplier">Supplier</label></div>
+            <select id="supplier" name="supplier">
+                <option value="Phuong Thao, Do">Phuong Thao, Do</option>
+                <option value="Alex Chary">Alex Chary</option>
+                <option value="David Cute">David Cute</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <div class="flabel"><label for="date">Date supplier</label></div>
+            <input type="date" name="date">
+        </div>
+
+        
+        <div class="form-group btn-group">
+            <input type="button" class="btn btn-group-item" id="reset" value="Reset">
+            <input type="button" class="btn btn-group-item" id="cancel" value="Cancel">
+            <input type="submit" class="btn btn-group-item" id="addProduct" value="Add Product">
+        </div>
+    </div>
+</form>
+<div id="result"></div>
+<div id="submitStr"></div>
+</div>
+</div>
+</body>
+</html>

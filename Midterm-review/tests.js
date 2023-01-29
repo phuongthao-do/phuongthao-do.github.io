@@ -44,12 +44,12 @@ function tester(){
     });
     describe("sumNumbers", function(){
         it("takes 6 parameters and returns the sum of their values", function(){
-            assert.equal(sumNumbers(7,5,3,1,3,6), 25);
+            assert.equal(sumNumbersArray(7,5,3,1,3,6), 25);
         });
     });
     describe("combineArrays", function(){
         it("takes 2 arrays and returns an arrays representing the combination of the two inputs", function(){
-            assert.equal(sumNumbersArray([7,5,3],[1,3,6]), '7,5,31,3,6');
+            assert.equal(combineArrays([7,5,3],[1,3,6]), '7,5,31,3,6');
         });
     });
     describe("addNumber", function(){
@@ -69,7 +69,7 @@ function tester(){
     });
     describe("usingBind", function(){
         it("uses closures to return a value", function(){
-            assert.equal(bindTest, 13);
+            assert.equal(bindTest(), 13);
         });
     });
 

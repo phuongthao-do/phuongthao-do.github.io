@@ -20,7 +20,8 @@ let map = testArray.map((elm) => elm.length);
 of strings representing the value of the elements
 which start with an uppsercase character */
 let filterFunc = (ele) => {
-  return ele.charCodeAt(0) >= 60 && ele.charCodeAt(0) <= 90;
+  return ele.charAt(0) == ele.charAt(0).toUpperCase();
+  // return ele.charCodeAt(0) >= 60 && ele.charCodeAt(0) <= 90;
 };
 let filter = testArray.filter(filterFunc);
 console.log(filter);
@@ -52,6 +53,8 @@ takes two arrays as inputs and returns an
 array with all of the elements of the two input
 arrays - (Hint: use spread)*/
 function combineArrays(x, y) {
+  console.log(x+y);
+  // return x.push(y);
   let array = x + y;
   return array;
 }
@@ -151,27 +154,45 @@ person and uses "Charlez Brown" to set the property of name
 inside the parent object.
 Add a function named eat to charlie which simply returns
 "eating...."*/
-function Person(name) {
-  this.name;
-}
-Person.prototype.speak = function () {
-  return this.name;
-};
-function Dave(name) {
-  this.name = name;
-}
-Dave.prototype.__proto__ = Person.prototype;
 
-let dave = new Dave("Dave Smith");
-Dave.prototype.name = dave.name;
-
-function Charlie(name) {
-  this.name = name;
+var person = {
+  name: "person name",
+  speal: function(){ return this.name}
 }
-Charlie.prototype.__proto__ = Person.prototype;
 
-let charlie = new Charlie("Charlez Brown");
-Charlie.prototype.name = charlie.name;
-Charlie.prototype.eat = function () {
-  return "eating....";
-};
+var dave = {
+  name: "Dave Smith",
+}
+dave.__proto__ = person;
+
+var charlie = {
+  name: "Charlez Brown",
+}
+charlie.__proto__ = person
+charlie.eat = function(){ return "eating....";}
+
+
+// function Person(name) {
+//   this.name;
+// }
+// Person.prototype.speak = function () {
+//   return this.name;
+// };
+// function Dave(name) {
+//   this.name = name;
+// }
+// Dave.prototype.__proto__ = Person.prototype;
+
+// let dave = new Dave("Dave Smith");
+// Dave.prototype.name = dave.name;
+
+// function Charlie(name) {
+//   this.name = name;
+// }
+// Charlie.prototype.__proto__ = Person.prototype;
+
+// let charlie = new Charlie("Charlez Brown");
+// Charlie.prototype.name = charlie.name;
+// Charlie.prototype.eat = function () {
+//   return "eating....";
+// };

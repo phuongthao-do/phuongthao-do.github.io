@@ -1,5 +1,3 @@
-let testArray = ["David", "marcus", "Noelle", "carl", "tina", "Natalia"];
-
 window.onload = tester;
 
 function tester(){

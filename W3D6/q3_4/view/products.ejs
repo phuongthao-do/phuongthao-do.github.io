@@ -1,0 +1,38 @@
+<%- include('fragments/head.ejs')%>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th>Product ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% for(var i=0; i < products.length; i++) { %>
+      <tr>
+        <td><%= products[i].id %></td>
+        <td><%= products[i].name %></td>
+        <td><%= products[i].price %></td>
+        <td><%= products[i].description %></td>
+      </tr>
+      <% } %>
+    </tbody>
+  </table>
+  <div id="form">
+    <form action="/addProduct" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="fname" name="name" /><br /><br />
+      <label for="lname">Id:</label>
+      <input type="text" id="lname" name="id" /><br /><br />
+      <label for="name">Price</label>
+      <input type="text" id="fname" name="price" /><br /><br />
+      <label for="lname">Description</label>
+      <input type="text" id="lname" name="des" /><br /><br />
+      <input type="submit" value="Add Product" />
+    </form>
+  </div>
+</body>
+<%- include('fragments/end.ejs')%>

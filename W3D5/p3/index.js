@@ -2,9 +2,6 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-const date = new Date();
-const hour = date.getHours();
-
 app.use(express.static(path.join(__dirname, '/css')))
 app.use(express.urlencoded({extended: false}));
 

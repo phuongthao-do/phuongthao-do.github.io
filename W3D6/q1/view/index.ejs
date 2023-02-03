@@ -1,0 +1,19 @@
+<!DOCTYPE html> view/index.ejs <html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <title>W3D6 Current time</title>
+    <script>
+      function getStylesheet() {
+        const currentTime = new Date().getHours();
+        if (currentTime > 18 || currentTime < 6) {
+          document.write("<link rel='stylesheet' href='/night.css' type='text/css'>");
+        }
+        else{
+          document.write("<link rel='stylesheet' href='/day.css' type='text/css'>");
+        }
+      }
+      getStylesheet();
+    </script>
+  </head>
+  <body> This page was loaded at <%= time %> </body>
+</html>

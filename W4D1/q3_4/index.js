@@ -39,10 +39,6 @@ app.post("/addToCart", (req, res) => {
     req.session.cart[name] = {...product};
   }
   let productsObj = req.session.cart;
-  console.log(productsObj);
   res.render("shoppingCart", { products: productsObj });
 });
-// app.post("/addToCart", (req, res) => {
-//   res.render("shoppingCart", { products });
-// });
 app.listen(port, () => console.log(`W4D1 app listening on port ${port}!`));

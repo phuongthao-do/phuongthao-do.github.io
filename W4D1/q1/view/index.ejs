@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <title>W4D1</title>
+    <link rel='stylesheet' href='/style.css' type='text/css'>
+  </head>
+    <body>
+        <h3>Add new keys</hy>
+        <form action="/addCookies" method="post">
+            <div class="input-field"><input type="text" name="key" placeholder="Enter key"></div>
+            <div class="input-field"><input type="text" name="value" placeholder="Enter value"></div>
+            <div class="input-field"><input type="submit" value="Submit" ></div>
+        </form>
+        <hr/>
+        <h3>Key-value added</h3>
+        <table>
+            <tr>
+                <th>Key</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td><%= key %></td>
+                <td><%= value %></td>
+            </tr>
+        </table>
+    </body>
+</html>

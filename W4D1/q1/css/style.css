@@ -1,0 +1,11 @@
+.input-field input{
+    width: 200pt;
+    padding: 10px;
+    margin: 10px;
+}
+
+th, td{
+    border: 1px solid black;
+    width: 200px;
+    padding: 10px;
+}

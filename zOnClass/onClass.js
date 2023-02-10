@@ -1,25 +1,21 @@
-class MyClass {
-  constructor() {
-    let privateAttribute = 'private';
-    
-    this.publicAttribute = 'public';
+$(() => {
+  $.ajax({
+    url:"http://localhost: 3000/spa",
+    type: "get",
+    timeout: 5,
+    success: successFunc,
+    error: errorFunc,
+    compelete: compeleteFunc
+  })
+})
+function successFunc(){}
 
-    let privateMethod = function() {
-      console.log('This is a private method');
-    };
+function errorFunc(){}
 
-    this.publicMethod = function() {
-      console.log('This is a public method');
-      privateMethod();
-    };
+function compeleteFunc(){}
 
-    this.getPrivateAttr = function(){ return privateAttribute; }
-  }
-
-  printP(){
-    console.log(this.getPrivateAttr());
+function makeCall(){
+  let d = {
+    number: $('num').val()
   }
 }
-
-let myO = new MyClass();
-myO.printP();
